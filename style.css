@@ -141,7 +141,7 @@ tr:nth-child(even)
 .border{
     border: 5px dashed rgb(189, 111, 189); /* Параметры границы */
     background: rgb(191, 228, 245); /* Цвет фона */
-    width: 1200px; 
+    max-width: 1200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
