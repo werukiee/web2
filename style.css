@@ -1,21 +1,27 @@
-#header{ 
+.wrapper{ 
     width: 100%; 
     height: 150px; 
-    background: url(shapka.jpg);
-    top:0px;
-    left:0px;
-    position:absolute;
-    }
+    padding: 0 0 0 0;
+	max-width:  960px;
+	margin: 0 auto 0 auto;
+}
+header {
+        display:  block;
+        height:  150px;
+        background: url(shapka.jpg);
+}
+.text_header{
+    font-family: 'Lato', sans-serif;
+    color:#D1F0C6;
+    font-size: 250%;
+}
 #logo{
     width: 100px; 
     height: 100px; 
     background: url(logo.gif);
-    margin: 20px 0 0 100px;
-    position:absolute;
-    top:0px;
-    left:0px;
+    
     float:  left;
-    }
+}
 #footer {
     width: 100%; /* Ширина слоя */
     height: 50px; 
@@ -25,9 +31,18 @@
 .footer_text{
     text-align: left;
 }
+#siteName {
+	padding:  0 0 0 0;
+	float:  left;
+}
+#siteName p {
+	height:  100%;
+	line-height: 60px;
+	margin:  0 0 0 0;
+}
 body{
     background-color:#EBF9FB;
-    margin-top: 200px;
+   
     text-align: center;
     margin-bottom: 0;
 }
@@ -43,10 +58,10 @@ ul{
 }
 ol{
     display:inline-table;
-    text-align:left;
 }
 li{
     margin-bottom: 4px;
+    text-align:left;
 }
 table{
     text-align: center;
@@ -68,7 +83,6 @@ tr:nth-child(even)
     background:rgb(213, 203, 221);
     padding: 5px; /* Поля вокруг текста */
 }
-
 .ss a{
     
     color: rgb(51, 3, 63);
@@ -142,7 +156,7 @@ tr:nth-child(even)
 .border{
     border: 5px dashed rgb(189, 111, 189); /* Параметры границы */
     background: rgb(191, 228, 245); /* Цвет фона */
-    width: 1200px; 
+    width: 960px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
