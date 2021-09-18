@@ -39,10 +39,11 @@ nav{
 }
 ul{
     list-style: none;
-
+    text-align:left;
 }
 ol{
     display:inline-table;
+    text-align:left;
 }
 li{
     margin-bottom: 4px;
