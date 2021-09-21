@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Anastasia</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+			<div id="logo"></div>
+			<div id="siteName">
+				<p class="text_header">WATASHI</p>
+			</div>
+    </div>
+  </header>
+    
+      <nav>
+        <ul class="menu-main">
+          <li><a href="#yakor" class="current">Домой</a></li>
+          <li><a href="#num">Ссылки</a></li>
+          <li><a href="#forma">Форма</a></li>
+        </ul>
+     </nav>
+
+  <div class="border">
+    <h1 id="yakor">Ссылки</h1>
+
+    <div class="ss">
+    <ol class="text_content">
+      <li><a href="http://example.com/index.html">Гиперссылка на главную страницу сайта example.com</a></li>
+      <li><a href="https://example.com/index.html">Гиперссылка на главную сайта example.com в протоколе https</a></li>
+      <li><a href="ftp://youtube.com/veb/2.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
+      <li><a href="ftp://test:password@sisadmin.ru/veb/1.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      <li><a href="http://example.com#about">Ссылка на фрагмент страницы некоторого сайта</a></li>
+      <li><a href="#yakor">Ссылка на якорь с текущей страницы</a></li>
+      <li><a href="http://example.com" target="_blank">Ссылка с двумя параметрами в URL</a></li>
+      <li><a href="#yakor" title="Первая часть задания">Ссылка на начало</a></li>
+      <li><a href="#forma" title="Вторая часть задания">Ссылка на форму</a></li>
+      <li><a title="Ссылка без href">Ссылка без href</a></li>
+      <li><a href="">Ссылка с пыстым href</a></li>
+      <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <li><a href="https://example.com" rel="noindex">Ссылка, по которой запрещена индексация</a></li>
+      <li>
+         <p id="num">
+           <a href="https://ru.wikipedia.org/wiki/Орех">Audaces fortuna juvat</a>-счастье покровительствует смелым.
+         </p>
+      </li>
+      <li><a href="http://example.com"><img src="1.jpg" alt="Ссылка картинка"></a>
+      <li>
+         <img src="2.jpg" width="300" height="300" usemap="#Navigation" alt="Картинка навигации">
+         <map name="Navigation">
+           <area shape="circle" coords="200,75,50" href="https://github.com" alt="Картинка с кругом">
+           <area shape="rect" coords="25,25,125,125" href="http://htmlbook.ru" alt="Картинка с прямоугольником">
+         </map>
+      </li> 
+      <li><a href="index.html">Относительная на страницу в текущем каталоге</a></li>
+      <li><a href="about">Относительная на страницу в каталоге about</a></li>
+      <li><a href=".">Один вверх</a></li>
+      <li><a href="./.">Два вверх</a></li>
+      <li><a href="/">Сокращенная на главную</a></li>
+      <li><a href=”/about”>Сокращенная ссылку на внутреннюю</a> </li>
+    </ol>
+  </div>
+
+  <h1>Таблица</h1>
+  <table>
+    <tr>
+     <th>Заголовок 1</th>
+     <th>Заголовок 2</th>
+     <th>Заколовок 3</th>
+    </tr>
+    <tr>
+     <td>(* ^ ω ^)</td>
+     <td>(⌒▽⌒)☆</td>
+     <td>ヽ(・∀・)ﾉ</td>
+   </tr>
+   <tr>
+    <td colspan="2">(´• ω •)</td>
+    <td>(＾▽＾)</td>
+   </tr>
+   <tr>
+    <td>(´｡• ᵕ •｡)</td>
+    <td>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</td>
+    <td rowspan="2">(─‿‿─)</td>
+   </tr>
+   <tr>
+    <td>( ´ ω )</td>
+    <td>(＠＾◡＾)</td>
+   </tr>
+   <tr>
+    <td>(๑˘︶˘๑)</td>
+    <td>(´｡• ᵕ •｡)</td>
+    <td>(⌒‿⌒)</td>
+   </tr>
+  </table>
+
+  <h1 id="forma">Пример формы HTML</h1>
+
+    <form action="/" method="POST">
+
+      <label>
+        Введите Ваше имя:
+        <br/>
+        <input name="field-name-1"
+          value=" "/>
+      </label>
+   <br/>
+
+      <label>
+        Введите Ваш email:
+        <br/>
+        <input name="field-email"
+          value="test@example.com"
+          type="email"/>
+      </label>
+      <br/>
+
+      <label>
+        Введите Вашу дату рождения:
+        <br/>
+        <input name="field-date"
+          value="2002-06-08"
+          type="date"/>
+      </label>
+      <br/>
+
+      Количество конечностей:<br/>
+      <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />1</label>
+      <label><input type="radio" name="radio-group-1" value="Значение2"/>2</label>
+      <label><input type="radio" name="radio-group-1" value="Значение2"/>3</label>
+      <label><input type="radio" name="radio-group-1" value="Значение2"/>4</label>
+      <br/>
+
+      Пол:<br/>
+      <label><input type="radio" checked="checked" name="radio-group-2" value="Значение1" />Мужской</label>
+      <label><input type="radio" name="radio-group-2" value="Значение2"/>Женский</label>
+      <br/>
+
+      <label>
+        Сверхспособности:
+        <br/>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">Левитация</option>
+        </select>
+      </label><br/>
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br/>
+
+      <label>
+        С контрактом ознакомлен (а):<input type="checkbox" checked="checked" name="check-1"/>
+      </label>
+      <br/>
+
+      <label> 
+        Отправьте что-то:
+        <input type="submit" value="Отправить" />
+    </label>
+    </form>
+ </div>
+
+ <div id="footer">
+  <p class="footer_text"> 
+    &copy; Anastasia Nesnova 2021
+  </p>
+ </div>
+
+</body>
+</html>
